@@ -1,8 +1,10 @@
 * {
   box-sizing: border-box;
+
+}
+div.section1 {
   font-family: 'Open Sans', sans-serif;
 }
-
 #bg-cover {
 position:fixed;
 top:0;
@@ -79,5 +81,19 @@ display:inline-block;
   margin:0;
 }
 #section0 {
-  background-color: transparent !important;
+  background-color: rgba(0,0,0,0.6  ) !important;
+}
+#section2 {
+  background-color: white;
+}
+.boxes {
+  display: inline-block;
+  position: relative;
+}
+.tech {
+  display: inline-block;
+  position: relative;
+}
+.tech object {
+  max-height: 50px;
 }
