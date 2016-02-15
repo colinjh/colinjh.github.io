@@ -4,57 +4,85 @@
 	<meta charset="UTF-8">
 	<title>Colin Harkness</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <!-- <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'> -->
+  <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+  <link rel="stylesheet" href="css/worddrop.css">
 	<link rel="stylesheet" href="css/portfolio.css">
 	<script src="js/jquery.min.js"></script>
   <script src="js/jquery.fullPage.min.js"></script>
 	<script src="js/portfolio.js" ></script>
   <script src="js/fullpage.js" ></script>
+  <script src="js/map.js"></script>
 
 </head>
-<body>
+<body class="fp-responsive">
 <ul id="menu">
   <li data-menuanchor="firstPage"><a href="#firstPage">HOME</a></li>
-  <li data-menuanchor="secondPage"><a href="#secondPage">TECHNOLOGIES</a></li>
+  <li data-menuanchor="secondPage"><a href="#secondPage">ABOUT</a></li>
   <li data-menuanchor="3rdPage"><a href="#3rdPage">PROJECTS</a></li>
-  <li data-menuanchor="4thpage"><a href="#4thPage">CONTACT</a></li>
+  <li data-menuanchor="lastpage"><a href="#lastpage">CONTACT</a></li>
 </ul>
    <img src="img/background3.jpg" alt="" id="bg-cover">
 
 
-<div id="fullpage">
+<div class="container" id="fullpage">
     <div class="section" id="section0">
       <div class="slide">
-      <h1>Colin Harkness</h1>
+      <h1 id='name'>COLIN HARKNESS</h1>
+      <h3 id='role'>Web Developer</h3>
+
+
+        </div>
       </div>
-    </div>
     <div class="section" id="section1">
       <div class="slide tech">
-      <h1>Technologies</h1>
-			<div><img src="img/html.png" alt=""></div>
-			<div></div>
-			<div></div>
+      <div class="row">
+        <h1 id='about'>ABOUT</h1>
+        <div class="ten colums">
+        <p id='blurb'>&lt;passion&gt; Coffee &lt;/passion&gt; <br>
+        </p>
+        </div>
+      </div>
       </div>
     </div>
     <div class="section" id="section2">
       <div class="slide">
-      <h1>Projects</h1>
-				<div class="boxes">
-					<div>Project 0</div>
-					<div>Project 1</div>
-					<div>Project 2</div>
-					<div>Project 3</div>
+      <h1 id='projects'>GA PROJECTS</h1>
+				<div class="row">
+          <div class="six columns">
+					   <div id='box'>Project 0</div>
+          </div>
+          <div class="six">
+					   <div id='box'>Project 1</div>
+          </div>
+          <div class="six columns">
+					 <div id='box'>Project 2</div>
+          </div>
+          <div class="six">
+					 <div id='box'>Project 3</div>
+          </div>
 
 				</div>
     	</div>
     </div>
     <div class="section" id="section3">
       <div class="slide">
-      <h1>Contact</h1>
+      <h1 id='contact'>CONTACT</h1>
+
+        <div id="map"></div>
+        <img class='headshot' src="img/headshot.jpg" alt="">
+        <div class="row">
+        <img src="" alt="">
+        </div>
       </div>
     </div>
 </div>
-
+ <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
 </body>
 </html>
 

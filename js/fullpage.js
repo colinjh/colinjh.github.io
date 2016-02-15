@@ -3,10 +3,10 @@ $(document).ready(function() {
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['firstPage', 'secondPage', '3rdPage', '4thpage'],
+        anchors:['firstPage', 'secondPage', '3rdPage', 'lastpage'],
         navigation: false,
-        navigationPosition: 'right',
-        navigationTooltips: ['firstSlide', 'secondSlide'],
+        // navigationPosition: 'right',
+        // navigationTooltips: ['firstSlide', 'secondSlide'],
         showActiveTooltip: false,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
@@ -51,7 +51,17 @@ $(document).ready(function() {
 
         //events
         onLeave: function(index, nextIndex, direction){},
-        afterLoad: function(anchorLink, index){},
+        afterLoad: function(anchorLink, index){
+            var loadedSection = $(this);
+
+            // if(anchorLink === 'secondPage'){
+            //     $('#tech').letterDrop();
+            // }
+            // else if(anchorLink === '3rdPage') {
+            //     console.log('age3')
+            //     $('#projects').letterDrop();
+            // }
+        },
         afterRender: function(){},
         afterResize: function(){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
