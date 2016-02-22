@@ -9,15 +9,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+  <link rel="stylesheet" href="css/jquery.fullPage.css">
   <link rel="stylesheet" href="css/worddrop.css">
   <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/main.css">
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.fullPage.min.js"></script>
   <script src="js/portfolio.js"></script>
   <script src="js/fullpage.js"></script>
   <script src="js/map.js"></script>
-
+  <script src="js/captionHover.dev.js"></script>
 </head>
 
 <body class="fp-responsive">
@@ -47,7 +48,8 @@
           <div class="ten columns">
 
             <p>I am a coffee obsessed and personable individual with a passion for technology and audio. I am pursuing a career in web development following my employment in a tech startup, as I thrived in the fast-paced environment and collaborating with
-              developers.</p>
+              developers.
+            </p>
             <p>I bring my newfound coding skills as well as some added extras: passion, problem solving and adaptability. I really enjoy being able to work within a team to take a product from conception to market. I’ll also bring some handy experience from
               my days working within the corporate workplace and well as a startup employee.</p>
           </div>
@@ -67,42 +69,69 @@
       </div>
     </div>
     <div class="section" id="section2">
-      <div class="slide">
-        <h1 id='projects'>GA PROJECTS</h1>
+      <div class="slide container">
+        <h1 id='projects'>PROJECTS</h1>
         <div class="rows" id='details'>
-          <div class="three columns">
-            <div class='project'>
-              <h3>Simon</h3>
-              <div id="box"><img src="img/simon.png" alt="" class='screen' id='simon'>
-                <div id="overlay">
-                  <span id="plus">+</span>
+          <div class="one-half column">
+              <div class="box">
+                <div class="image-overlay">
+                <h5>Simon<br>My first project designing the memory game Simon</h5>
+                <a href="https://github.com/colinjh/simon">
+                   <i class="fa fa-github"></i>
+                </a>
+                <a href="http://colinjh.github.io/simon/">
+                <i class="fa fa-link"></i>
+                </a>
                 </div>
+                  <img src="img/simon.png" alt="">
+                </div>
+          </div>
+          <div class="one-half column">
+              <div class="box">
+                <div class="image-overlay">
+                  <h5>Rent My Stuff<br>Rails project creating a shared economy site</h5>
+                <a href="https://github.com/colinjh/mystuff">
+                  <i class="fa fa-github"></i>
+                </a>
+                <a href="https://secret-reaches-8332.herokuapp.com/">
+                <i class="fa fa-link"></i>
+                </a>
+                </div>
+                <img src="img/rentmystuff.png" alt="">
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae hic odio cumque in. Dolor, nam. Numquam adipisci hic facere error fuga, aliquid recusandae, pariatur magnam consequatur blanditiis consequuntur, at quis!</p>
             </div>
-          </div>
-          <div class="three columns">
-            <div class='project'>
-              <h3>Rent My Stuff</h3>
-              <div class="box"><img src="img/rentmystuff.png" alt="" class="screen" id="rent"></div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur soluta cumque maxime quo voluptatum minus laudantium recusandae accusantium ullam reiciendis quia ratione, culpa non, aperiam consequatur quod quas fugiat impedit!</p>
             </div>
+            <div class="rows">
+          <div class="one-half column">
+              <div class="box">
+                <div class="image-overlay">
+                  <h5>Social View<br>A group project utilising the Google Maps/Instagram/Twitter APIs</h5>
+                <a href="https://github.com/Noviny/socialview">
+                  <i class="fa fa-github"></i>
+                </a>
+                <a href="http://social-view.herokuapp.com/">
+                <i class="fa fa-link"></i>
+                </a>
+                </div>
+                <img src="img/socialview.png" alt="">
+              </div>
           </div>
-          <div class="three columns">
-            <div class='project'>
-              <h3>Social View</h3>
-              <div class="box"><img src="img/socialview.png" alt="" class="screen" id="social"></div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, ducimus, sunt, amet debitis adipisci quaerat minus quidem maiores fugit nostrum impedit possimus! Repellat, repudiandae ab dolor praesentium unde possimus rerum.</p>
-            </div>
+          <div class="one-half column">
+              <div class="box">
+                <div class="image-overlay">
+                  <h5>Autoflux<br>My final prject that utilses a BeagleBone Black with a light sensor talking to a LIFX lightbulb</h5>
+                <a href="https://github.com/colinjh/mystuff">
+                  <i class="fa fa-github"></i>
+                </a>
+                <a href="http://colinjh.github.io/autoflux/">
+                <i class="fa fa-link"></i>
+                </a>
+                  </div>
+                  <img src="img/autoflux.png" alt="">
+              </div>
           </div>
-          <div class="three columns">
-            <div class='project'>
-              <h3>Autoflux</h3>
-              <div class="box"><img src="img/autoflux.png" alt="" class="screen" id="flux"></div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsam ad deleniti eius tenetur sequi asperiores, corporis reiciendis, porro, omnis aliquam est animi incidunt possimus. Quas, assumenda. Distinctio, repellendus, saepe!</p>
-            </div>
           </div>
-        </div>
+
       </div>
     </div>
     <div class="section" id="section3">
@@ -112,15 +141,23 @@
         <div id="map"></div>
         <img class='headshot' src="img/headshot.jpg" alt="">
         <div class="row">
-          <ul>
+          <div class="five columns">
+            <ul class="contact">
+              <li>
+                <a href="mailto:colin.harkness@gmail.com">colin.harkness@gmail.com</a>
+              </li>
+              <li><a href="tel:+61417765728">0417 765 728</a></li>
+            </ul>
+            <ul>
+          </div>
+          <div class="six columns">
             <li class='social'>
-              <a href="mailto:colin.harkness@gmail.com"><i class="fa fa-envelope-o"></i></a>
-              <a href="tel:+61417765728"><i class="fa fa-mobile"></i></a>
               <a href="http://www.twitter.com/colski"><i class="fa fa-twitter"></i></a>
               <a href="https://au.linkedin.com/in/colinharkness"><i class="fa fa-linkedin"></i></a>
               <a href="https://github.com/colinjh"><i class="fa fa-github-alt"></i></a>
             </li>
-          </ul>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
