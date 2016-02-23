@@ -52,14 +52,6 @@ jQuery.fn.letterDrop = function() {
 
 };
 
-$('#simon').captionHover({
-      fx: 'zoe',
-      headColor: '#fff',
-      // captionColor: #fff,
-      overlay: '#3085a3',
-      bgCaption: '#CDB7B5',
-      iconColor: '##3c4a50'
-});
 
 $( '#name' ).letterDrop();
 
