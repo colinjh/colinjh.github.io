@@ -234,7 +234,7 @@ ul.contact li a {
   left: 0;
   padding: 0;
   text-align:center;
-  font-size:40px;
+  font-size:30px;
   line-height: 200px;  /* added this */
 
   -webkit-transition: opacity .5s ease-in-out;
@@ -247,6 +247,7 @@ ul.contact li a {
 .box .image-overlay a {
   color: #ff8d3f;
   text-decoration: none;
+  margin-bottom: 1em;
 }
 
 .box:hover .image-overlay{
@@ -256,7 +257,7 @@ ul.contact li a {
 .box img {
   max-width: 100%;
   height: auto;
-  display: block; /* added this */
+  display: block;
 
 }
 .box{
