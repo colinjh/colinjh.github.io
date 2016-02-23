@@ -48,9 +48,6 @@ img.head {
 div .about {
   display: inline-flex;
 }
-/*div .projects {
-  display: inline-block
-}*/
 h1#projects {
   /*text-align: left;*/
   padding-left: 1em;
@@ -139,7 +136,6 @@ p#blurb {
 }
 #section0 {
   background-color: rgba(0, 0, 0, 0.8) !important;
-  /*background-color: transparent !important;*/
 }
 #section1 {
   background-color: #D5D6D2 !important;
@@ -170,7 +166,6 @@ img.headshot {
 }
 .social i.fa {
   font-size: 3em;
-  /*letter-spacing: 2;*/
   color: #ff8d3f;
   padding-left: 2em;
 }
@@ -180,12 +175,7 @@ li.social {
   position: absolute;
 
 }
-img.screen {
-  /*max-width: 550px;*/
-  /*position: absolute;
-  display: inline-block;
-  border: 0;*/
-}
+
 #tech {
   padding-left: 12em;
   padding-top: 3em;
@@ -193,19 +183,7 @@ img.screen {
 #tech img {
   padding-left: 2em;
 }
-/*figure {
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
 
-figcaption {
-  position: absolute;
-  background: rgba(0,0,0,0.75);
-  color: white;
-  padding: 10px 20px;
-}
-*/
 ul.contact {
   color: orange;
   display: absolute;
@@ -220,7 +198,6 @@ ul.contact li {
 ul.contact li a {
   text-decoration: none;
   font-size: 1.5em;
-  /*letter-spacing: 2;*/
   color: #ff8d3f;
 }
 .box .image-overlay{
@@ -235,7 +212,7 @@ ul.contact li a {
   padding: 0;
   text-align:center;
   font-size:30px;
-  line-height: 200px;  /* added this */
+  line-height: 200px;
 
   -webkit-transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
@@ -266,5 +243,9 @@ ul.contact li a {
   position:relative;
   overflow: hidden;
   margin-left: 12em;
+}
+.image-overlay h5 {
+  margin-bottom: -1em;
+  margin-top: 0.5em;
 }
 
