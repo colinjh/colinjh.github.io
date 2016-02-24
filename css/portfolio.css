@@ -225,6 +225,7 @@ ul.contact li a {
   color: #ff8d3f;
   text-decoration: none;
   margin-bottom: 1em;
+  letter-spacing: 0.5em;
 }
 
 .box:hover .image-overlay{
